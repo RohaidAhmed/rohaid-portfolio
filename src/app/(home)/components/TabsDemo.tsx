@@ -26,16 +26,16 @@ export function TabsDemo() {
                 </div>
             ),
         },
-        // {
-        //     title: "Playground",
-        //     value: "playground",
-        //     content: (
-        //         <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-purple-700 to-violet-900">
-        //             <p>Playground tab</p>
-        //             <ImageContainer src={""} href={""} />
-        //         </div>
-        //     ),
-        // },
+        {
+            title: "Github User Search",
+            value: "service",
+            content: (
+                <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-purple-700 to-violet-900">
+                    <p>Github User Search</p>
+                    <ImageContainer src={"/best-projects/github-user-search.png"} href={"https://github-user-serach-rohaid.vercel.app/"} />
+                </div>
+            ),
+        },
         // {
         //     title: "Content",
         //     value: "content",

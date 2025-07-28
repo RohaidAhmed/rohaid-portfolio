@@ -3,6 +3,7 @@ import { BentoGrid, BentoGridItem } from "@/components/ui/bento-grid";
 import {
   IconClipboardCopy,
   IconFileBroken,
+  IconSignature,
 } from "@tabler/icons-react";
 import Link from "next/link";
 import Image from "next/image";
@@ -48,7 +49,7 @@ function ItemImage({ src, href }: { src: string; href: string }) {
 const items = [
   {
     title: "Invoice Dashboard",
-    description: "Explore the birth of groundbreaking ideas and inventions.",
+    description: "",
     src: "/best-projects/invoice-dashboard.png",
     href: "https://invoice-dashboard-rohaid.vercel.app/",
     header: <ItemImage src={"/best-projects/invoice-dashboard.png"} href={"https://invoice-dashboard-rohaid.vercel.app/"} />,
@@ -57,18 +58,18 @@ const items = [
   },
   {
     title: "Weather App",
-    description: "Dive into the transformative power of technology.",
+    description: "",
     src: "/best-projects/weather-app.png",
     href: "https://forcast-weather.vercel.app/",
     header: <ItemImage src={"/best-projects/weather-app.png"} href={"https://forcast-weather.vercel.app/"} />,
     icon: <IconFileBroken className="h-4 w-4 text-neutral-500" />,
   },
-  // {
-  //   title: "The Art of Design",
-  //   description: "Discover the beauty of thoughtful and functional design.",
-  //   header: <ItemImage />,
-  //   icon: <IconSignature className="h-4 w-4 text-neutral-500" />,
-  // },
+  {
+    title: "Github User Search",
+    description: "",
+    header: <ItemImage src={"/best-projects/github-user-search.png"} href={"https://github-user-serach-rohaid.vercel.app/"} />,
+    icon: <IconSignature className="h-4 w-4 text-neutral-500" />,
+  },
   // {
   //   title: "The Power of Communication",
   //   description:
