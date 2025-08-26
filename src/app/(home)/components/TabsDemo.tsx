@@ -36,16 +36,16 @@ export function TabsDemo() {
                 </div>
             ),
         },
-        // {
-        //     title: "Content",
-        //     value: "content",
-        //     content: (
-        //         <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-purple-700 to-violet-900">
-        //             <p>Content tab</p>
-        //             <ImageContainer src={""} href={""} />
-        //         </div>
-        //     ),
-        // },
+        {
+            title: "Country Info App",
+            value: "country-info",
+            content: (
+                <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-purple-700 to-violet-900">
+                    <p>Country Info App</p>
+                    <ImageContainer src={"/best-projects/country-info.PNG"} href={"https://country-info-rohaid.vercel.app/"} />
+                </div>
+            ),
+        },
         // {
         //     title: "Random",
         //     value: "random",

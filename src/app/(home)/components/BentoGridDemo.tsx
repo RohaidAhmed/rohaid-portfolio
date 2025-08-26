@@ -4,6 +4,7 @@ import {
   IconClipboardCopy,
   IconFileBroken,
   IconSignature,
+  IconTableColumn,
 } from "@tabler/icons-react";
 import Link from "next/link";
 import Image from "next/image";
@@ -21,8 +22,8 @@ export function BentoGridDemo() {
             description={item.description}
             header={item.header}
             icon={item.icon}
-            className={i === 3 || i === 6 ? "md:col-span-2" : ""} />
-
+            className={i === 3 || i === 6 ? "md:col-span-3 md:row-span-2" : ""}
+          />
         ))}
       </BentoGrid>
     </div>
@@ -37,9 +38,9 @@ function ItemImage({ src, href }: { src: string; href: string }) {
       className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl overflow-hidden"
     >
       <Image
-        className="h-full w-full object-cover"
-        width={500}
-        height={500}
+        className="h-full w-full object-fill hover:scale-105 transition-transform"
+        width={1000}
+        height={1000}
         src={src ?? ""}
         alt="project-img"
       />
@@ -49,7 +50,7 @@ function ItemImage({ src, href }: { src: string; href: string }) {
 const items = [
   {
     title: "Invoice Dashboard",
-    description: "",
+    description: "See all your invoices in one place.",
     src: "/best-projects/invoice-dashboard.png",
     href: "https://invoice-dashboard-rohaid.vercel.app/",
     header: <ItemImage src={"/best-projects/invoice-dashboard.png"} href={"https://invoice-dashboard-rohaid.vercel.app/"} />,
@@ -58,7 +59,7 @@ const items = [
   },
   {
     title: "Weather App",
-    description: "",
+    description: "fetch real-time weather data.",
     src: "/best-projects/weather-app.png",
     href: "https://forcast-weather.vercel.app/",
     header: <ItemImage src={"/best-projects/weather-app.png"} href={"https://forcast-weather.vercel.app/"} />,
@@ -66,33 +67,33 @@ const items = [
   },
   {
     title: "Github User Search",
-    description: "",
+    description: "Search GitHub profiles and view details.",
     header: <ItemImage src={"/best-projects/github-user-search.png"} href={"https://github-user-serach-rohaid.vercel.app/"} />,
     icon: <IconSignature className="h-4 w-4 text-neutral-500" />,
   },
-  // {
-  //   title: "The Power of Communication",
-  //   description:
-  //     "Understand the impact of effective communication in our lives.",
-  //   header: <ItemImage />,
-  //   icon: <IconTableColumn className="h-4 w-4 text-neutral-500" />,
-  // },
+  {
+    title: "Country Info App",
+    description:
+      "Get detailed information about countries worldwide.",
+    header: <ItemImage src={"/best-projects/country-info.PNG"} href={"https://country-info-rohaid.vercel.app/"} />,
+    icon: <IconTableColumn className="h-4 w-4 text-neutral-500" />,
+  },
   // {
   //   title: "The Pursuit of Knowledge",
   //   description: "Join the quest for understanding and enlightenment.",
-  //   header: <ItemImage />,
+  //   header: <ItemImage src={""} href={""} />,
   //   icon: <IconArrowWaveRightUp className="h-4 w-4 text-neutral-500" />,
   // },
   // {
   //   title: "The Joy of Creation",
   //   description: "Experience the thrill of bringing ideas to life.",
-  //   header: <ItemImage />,
+  //   header: <ItemImage src={""} href={""} />,
   //   icon: <IconBoxAlignTopLeft className="h-4 w-4 text-neutral-500" />,
   // },
   // {
   //   title: "The Spirit of Adventure",
   //   description: "Embark on exciting journeys and thrilling discoveries.",
-  //   header: <ItemImage />,
+  //   header: <ItemImage src={""} href={""} />,
   //   icon: <IconBoxAlignRightFilled className="h-4 w-4 text-neutral-500" />,
   // },
 ];
