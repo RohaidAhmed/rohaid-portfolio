@@ -11,7 +11,7 @@ export function TabsDemo() {
             value: "task-manager",
             content: (
                 <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-purple-700 to-violet-900">
-                    <p>Random tab</p>
+                    <p>Task Manager</p>
                     <ImageContainer src={"/best-projects/task-manager.png"} href={"https://task-manager-rohaid.vercel.app/"} />
                 </div>
             ),
