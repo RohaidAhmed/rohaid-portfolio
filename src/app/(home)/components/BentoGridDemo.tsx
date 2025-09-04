@@ -1,6 +1,7 @@
 import React from "react";
 import { BentoGrid, BentoGridItem } from "@/components/ui/bento-grid";
 import {
+  IconArrowWaveRightUp,
   IconClipboardCopy,
   IconFileBroken,
   IconSignature,
@@ -22,7 +23,9 @@ export function BentoGridDemo() {
             description={item.description}
             header={item.header}
             icon={item.icon}
-            className={i === 3 || i === 6 ? "md:col-span-3 md:row-span-2" : ""}
+            href={item.href}
+            className={i === 0 ? "md:col-span-3 md:row-span-2" : ""}
+          // className={i === 3 || i === 6 ? "md:col-span-3 md:row-span-2" : ""}
           />
         ))}
       </BentoGrid>
@@ -49,6 +52,13 @@ function ItemImage({ src, href }: { src: string; href: string }) {
 }
 const items = [
   {
+    title: "Task Manger",
+    description: "A Full Stack app developed with Next.js for both frontend and backend (server-side rendering based on Node.js).",
+    href: "https://task-manager-rohaid.vercel.app/",
+    header: <ItemImage src={"/best-projects/task-manager.png"} href={"https://task-manager-rohaid.vercel.app/"} />,
+    icon: <IconArrowWaveRightUp className="h-4 w-4 text-neutral-500" />,
+  },
+  {
     title: "Invoice Dashboard",
     description: "See all your invoices in one place.",
     src: "/best-projects/invoice-dashboard.png",
@@ -68,6 +78,7 @@ const items = [
   {
     title: "Github User Search",
     description: "Search GitHub profiles and view details.",
+    href: "https://github-user-serach-rohaid.vercel.app/",
     header: <ItemImage src={"/best-projects/github-user-search.png"} href={"https://github-user-serach-rohaid.vercel.app/"} />,
     icon: <IconSignature className="h-4 w-4 text-neutral-500" />,
   },
@@ -75,15 +86,10 @@ const items = [
     title: "Country Info App",
     description:
       "Get detailed information about countries worldwide.",
+    href: "https://country-info-rohaid.vercel.app/",
     header: <ItemImage src={"/best-projects/country-info.PNG"} href={"https://country-info-rohaid.vercel.app/"} />,
     icon: <IconTableColumn className="h-4 w-4 text-neutral-500" />,
   },
-  // {
-  //   title: "The Pursuit of Knowledge",
-  //   description: "Join the quest for understanding and enlightenment.",
-  //   header: <ItemImage src={""} href={""} />,
-  //   icon: <IconArrowWaveRightUp className="h-4 w-4 text-neutral-500" />,
-  // },
   // {
   //   title: "The Joy of Creation",
   //   description: "Experience the thrill of bringing ideas to life.",
