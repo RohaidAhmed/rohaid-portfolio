@@ -1,13 +1,3 @@
-// import Portfolio from "@/components/portfolio";
-
-// export default function Home() {
-//   return (
-//     <div>
-//       <Portfolio/>
-//     </div>
-//   );
-// }
-
 "use client";
 
 import { useState, useEffect, useRef } from "react";

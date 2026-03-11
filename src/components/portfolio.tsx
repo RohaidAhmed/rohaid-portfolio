@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect, useRef, FC, ReactNode } from "react";
+import { useState, useEffect, useRef, FC } from "react";
 
 // ─── Types ────────────────────────────────────────────────────────────────────
 
