@@ -2,6 +2,7 @@ import React from "react";
 import { BentoGrid, BentoGridItem } from "@/components/ui/bento-grid";
 import {
   IconArrowWaveRightUp,
+  IconBoxAlignTopLeft,
   IconClipboardCopy,
   IconFileBroken,
   IconSignature,
@@ -51,6 +52,12 @@ function ItemImage({ src, href }: { src: string; href: string }) {
   );
 }
 const items = [
+  {
+    title: "ERP System",
+    description: "A prototype for ERP System; accepting customizations.",
+    header: <ItemImage src={"/best-projects/erp-system.png"} href={"https://erp-system-prototype-rohaid.vercel.app/"} />,
+    icon: <IconBoxAlignTopLeft className="h-4 w-4 text-neutral-500" />,
+  },
   {
     title: "Task Manger",
     description: "A Full Stack app developed with Next.js for both frontend and backend (server-side rendering based on Node.js).",

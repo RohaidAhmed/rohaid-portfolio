@@ -7,6 +7,16 @@ import Link from "next/link";
 export function TabsDemo() {
     const tabs = [
         {
+            title: "ERP System",
+            value: "erp-system",
+            content: (
+                <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-purple-700 to-violet-900">
+                    <p>ERP System</p>
+                    <ImageContainer src={"/best-projects/erp-system.png"} href={"https://erp-system-prototype-rohaid.vercel.app/"} />
+                </div>
+            ),
+        },
+        {
             title: "Task Manager",
             value: "task-manager",
             content: (
@@ -26,17 +36,6 @@ export function TabsDemo() {
                 </div>
             ),
         },
-        {
-            title: "Country Info App",
-            value: "country-info",
-            content: (
-                <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-purple-700 to-violet-900">
-                    <p>Country Info App</p>
-                    <ImageContainer src={"/best-projects/country-info.PNG"} href={"https://country-info-rohaid.vercel.app/"} />
-                </div>
-            ),
-        },
-        
     ];
 
     return (
