@@ -9,7 +9,7 @@ export const projects: Project[] = [
     color: "#00ff88",
     year: "2026",
     // status: "In Progress",
-    link: "erp-system-prototype-rohaid.vercel.app",
+    link: "https://erp-system-prototype-rohaid.vercel.app",
     featured: true,
   },
   {
